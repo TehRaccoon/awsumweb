@@ -16,7 +16,7 @@ section {
     background-color: #24272b;
     margin: 8px 8px;
     margin-right: 0px;
-    text-align:center;
+    text-align: center;
 }
 
 header {
@@ -43,15 +43,22 @@ nav {
     margin-left: 0px;
 }
 
-nav > a {
+li > a {
     text-decoration: none;
     color: #ffffff;
+    text-decoration: none;
 }
 
 #hakumen {
     text-align: left;
     width: 20%;
     height: 100%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 #div {
@@ -62,4 +69,18 @@ section > article {
     background-color: #3e6680;
     padding: 3px 8px;
     margin: 15px 400px;
+}
+
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
